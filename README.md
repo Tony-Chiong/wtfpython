@@ -1726,8 +1726,10 @@ UnboundLocalError: local variable 'a' referenced before assignment
 * Read [this](http://sebastianraschka.com/Articles/2014_python_scope_and_namespaces.html) short but an awesome guide to learn more about how namespaces and scope resolution works in Python.
 * To modify the outer scope variable `a` in `another_func`, use `global` keyword.
   ```py
-  def another_func()
-      global a
+  global a
+  a = 1
+    
+  def another_func()
       a += 1
       return a
   ```
