@@ -1727,13 +1727,11 @@ UnboundLocalError: local variable 'a' referenced before assignment
 * To modify the outer scope variable `a` in `another_func`, use `global` keyword.
   ```py
   global a
-  a = 1
-    
-  def another_func()
+  a = 1
+  def another_func()
       a += 1
       return a
   ```
-
   **Output:**
   ```py
   >>> another_func()
